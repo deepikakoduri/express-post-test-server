@@ -3,8 +3,10 @@
 ```
 npm install
 
-node index.js -p <portno>
+node index.js -p <http-portno>
 
-if port is not defined 8080 is used.
+node index.js -p <http-portno> -s <https-port> -k <private-key> -c <certficate>
+
+if port is not defined 8080 is used for http and 8081 for https
 
 ```
