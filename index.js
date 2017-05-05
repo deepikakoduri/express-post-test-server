@@ -1,6 +1,6 @@
 const app = require('express')(),
-    https = require('https');
-    http = require('http');
+    https = require('https'),
+    http = require('http'),
     bodyparser = require('body-parser'),
     fs = require('fs'),
     program = require('commander');
@@ -23,10 +23,10 @@ let httpServer;
 let httpsServer;
 
 app.use(bodyparser.urlencoded({extended: false}));
-app.use(bodyparser.json())
+app.use(bodyparser.json());
 
 app.post('/data',function(req,res){
-  console.log(req)
+  console.log(req);
   res.send("received");
   res.end();
 })
